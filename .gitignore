@@ -87,3 +87,10 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# Java
+java/target/
+
+# Intelij Idea
+java/.idea/
+java/*.iml
