@@ -41,7 +41,12 @@ public class LSDTest {
     Assert.assertArrayEquals("前检查", list.toArray(), list.toArray());
     ArrayList<String> shuffledList = new ArrayList<String>(list);
     Collections.shuffle(shuffledList);
-    Assert.assertArrayEquals("打乱检查", list.toArray(), shuffledList.toArray());
+    String[] target = shuffledList.toArray(new String[list.size()]);
+    LSD.sort(target, 2);
+    for (int i = 0; i < target.length; i++) {
+      System.out.println(target[i]);
+    }
+    Assert.assertArrayEquals("打乱检查", list.toArray(), target);
 
   }
 
