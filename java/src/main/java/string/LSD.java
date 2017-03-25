@@ -5,9 +5,11 @@ package string;
  *
  */
 class LSD {
+
+  private static int R = 256;
+
   static void sort(String[] a, int w) {
 
-    int R = 256;
     String[] aux = new String[a.length];
 
     for (int i = w-1; i >= 0  ; i--) {

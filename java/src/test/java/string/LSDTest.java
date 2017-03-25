@@ -38,17 +38,17 @@ public class LSDTest {
     list.add("10");
     list.add("20");
     list.add("21");
-    Assert.assertArrayEquals("前检查", list.toArray(), list.toArray());
+
     ArrayList<String> shuffledList = new ArrayList<String>(list);
     Collections.shuffle(shuffledList);
     String[] target = shuffledList.toArray(new String[list.size()]);
+
+    Utils.printStringList(list.toArray(new String[list.size()]));
     LSD.sort(target, 2);
-    for (int i = 0; i < target.length; i++) {
-      System.out.println(target[i]);
-    }
+    Utils.printStringList(target);
+
     Assert.assertArrayEquals("打乱检查", list.toArray(), target);
 
   }
-
 
 } 
