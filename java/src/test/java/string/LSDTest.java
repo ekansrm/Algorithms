@@ -43,9 +43,9 @@ public class LSDTest {
     Collections.shuffle(shuffledList);
     String[] target = shuffledList.toArray(new String[list.size()]);
 
-    Utils.printStringList(list.toArray(new String[list.size()]));
+//    Utils.printStringList(list.toArray(new String[list.size()]));
     LSD.sort(target, 2);
-    Utils.printStringList(target);
+//    Utils.printStringList(target);
 
     Assert.assertArrayEquals("打乱检查", list.toArray(), target);
 

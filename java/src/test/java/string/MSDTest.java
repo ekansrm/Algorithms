@@ -39,9 +39,9 @@ public class MSDTest {
     Collections.shuffle(shuffledList);
     String[] target = shuffledList.toArray(new String[list.size()]);
 
-    Utils.printStringList(list.toArray(new String[list.size()]));
+//    Utils.printStringList(list.toArray(new String[list.size()]));
     MSD.sort(target);
-    Utils.printStringList(target);
+//    Utils.printStringList(target);
 
     Assert.assertArrayEquals("排序后检查", list.toArray(), target);
 

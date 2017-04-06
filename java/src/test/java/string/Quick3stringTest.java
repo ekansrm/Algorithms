@@ -38,9 +38,9 @@ public class Quick3stringTest {
     Collections.shuffle(shuffledList);
     String[] target = shuffledList.toArray(new String[list.size()]);
 
-    Utils.printStringList(list.toArray(new String[list.size()]));
+//    Utils.printStringList(list.toArray(new String[list.size()]));
     Quick3string.sort(target);
-    Utils.printStringList(target);
+//    Utils.printStringList(target);
 
     Assert.assertArrayEquals("排序后检查", list.toArray(), target);
 
